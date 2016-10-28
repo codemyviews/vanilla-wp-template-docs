@@ -91,9 +91,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/LaraWP.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Vanilla Wordpress Template.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/LaraWP.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Vanilla Wordpress Template.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -110,8 +110,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/LaraWP"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/LaraWP"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/Vanilla Wordpress Template"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Vanilla Wordpress Template"
 	@echo "# devhelp"
 
 .PHONY: epub
