@@ -4,19 +4,38 @@
    contain the root `toctree` directive.
 
 Welcome to Vanilla Wordpress Template's documentation!
-==================================
+========================================================
 
 Contents:
 
+.. _intro:
+.. toctree::
+
+   intro
+
+.. _installation:
+.. toctree::
+
+   installation
+
+.. _basics:
 .. toctree::
    :maxdepth: 2
 
+   basics
 
+.. _components:
+.. toctree::
+   :maxdepth: 2
 
-Indices and tables
-==================
+   components
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. _helpers:
+.. toctree::
 
+   helpers
+
+.. _how-to-build-a-theme:
+.. toctree::
+
+   how-to-build-a-theme
