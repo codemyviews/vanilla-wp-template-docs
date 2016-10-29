@@ -89,25 +89,23 @@ You should be able to visit: http://localhost in your browser now.
 
 If you see the WAMP page when you visit http://localhost, then WAMP has been installed.
 
--------------------------------------------------
-Database Management
--------------------------------------------------
+.. note::
+   Database management is straightforward with phpmyadmin.
+   Visit http://localhost/phpmyadmin
 
-Database management is straightforward with phpmyadmin.
+   The default password for mysql is:
+   ::
 
-Visit http://localhost/phpmyadmin
+      username: root
+      password:
 
-The default password for mysql is:
+   The password is empty.
 
-::
-
-   username: root
-   password:
-
-The password is empty.
+.. note::
+If you are taking over an existing project, there should be a backup of the latest database included in the project root.  You should import this via phpmyadmin to get all of the content and data loaded into your local dev environment.
 
 -------------------------------------------------
-Installing a new site
+Step 11: Installing a new site
 -------------------------------------------------
 
 This is a quick guide on how to install a new site on your local WAMP development environment.
@@ -119,7 +117,7 @@ For example, if you have a project called “sample-project”, you would have t
 The goal is to setup your local dev environment so that you can visit a url in your browser, for example: http://sample-project.dev, and have the local code display.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 1: Edit your host file
+Step 12: Edit your host file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Open up this file in your text editor (eg Sublime Text): *c:\WINDOWS\system32\drivers\etc\hosts*
@@ -134,7 +132,7 @@ At the bottom of the hosts file, add the following line:
    You will need to right click on Sublime Text and click “Run as Administrator”.  If you do not do this, you will not be able to save the hosts file.  This file requires admin privileges to save.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 2: Add the vhost configuration
+Step 13: Add the vhost configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Open up this file in your text editor: *C:\wamp\bin\Apache#.#.#\conf\extra\httpd-vhosts.conf*
@@ -162,53 +160,11 @@ At the bottom of this file, add the following:
    Restart WAMP after you save this file.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 3: Install Composer Dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Many of the projects at Code My Views use Composer to manage dependencies.  You should have already installed Composer.
-
-Every time you clone a new project from CMV, you should be sure to install the composer dependencies by:
-
-#. Open Git Bash
-#. Go to the project root: cd c:/wamp/www/sample-project/
-#. Run the following command: composer install
-
-All this does is download all dependencies and place them into the vendor directory (c:/wamp/www/sample-project/vendor).
-
-Please note that not all of our projects use composer, but all WP projects will use composer.  You can see if composer is used based off of whether or not there is a composer.json file in the project root.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 4: Create .env file
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-All of our WordPress projects and Laravel projects will use a .env file.  All of these projects will include a file called: .env.example.  The steps here are:
-
-Create a new file and name it .env - this file should go in the project root (c:/wamp/www/sample-project/.env)
-
-Copy the contents of .env.example into .env
-
-Update the values in .env to match the values of your local dev environment
-
-* DB_USER will likely be root in your WAMP environment
-* DB_PASS can be left blank since WAMP does not have a database password set by default
-* DB_NAME should be set to the name of a database you will create in the next step
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 5: Create Database
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If the project needs a database, simply visit http://localhost/phpmyadmin to create a new local database.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 6: Import Database
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you are taking over an existing project, there should be a backup of the latest database included in the project root.  You should import this via phpmyadmin to get all of the content and data loaded into your local dev environment.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Step 7: Does it work?
+Step 14: Does it work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You should be able to visit http://sample-project.dev in your browser and see the project.
 
 If you do not see the site loading, make sure you restarted WAMP.
+
+Next steps can be found here - :ref:`installation`

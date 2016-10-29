@@ -2,19 +2,25 @@
 Overview
 ==============
 
-This documentation was created to accompany the Vanilla WP Boilerplate template.  This template can be found on Github: `Vanilla WordPress Boilerplate by Code My Views <https://github.com/codemyviews/vanilla-wp-boilerplate>`_.
-
-The purpose of the Vanilla boilerplate is to simplify the process of taking static HTML/CSS and templating it out into a custom WordPress theme.
+This documentation was created to accompany the `Vanilla WordPress Boilerplate <https://github.com/codemyviews/vanilla-wp-boilerplate>`_  by `Code My Views <https://codemyviews.com>`_.
 
 ---------------------
 Motivation
 ---------------------
+
+The purpose of the Vanilla boilerplate is to simplify the process of taking static HTML/CSS and templating it out into a custom WordPress theme.
 
 The end goal in building a custom WordPress theme is to make it as easy as possible for the end user to update the content of their site.
 
 The input into this process is static HTML/CSS.  The expected output is a very easy to use WP theme using the various components you have available to you below.
 
 When you are building out a WP theme, it is important to think of the end user experience.  How can you setup the theme so it is as easy and foolproof as possible for the end user.
+
+---------------------
+Pre-Requisites
+---------------------
+
+Before you can really benefit from this starter theme, you should have an already completed front end (HTML/CSS/JavaScript) of the site you are building.  This starter theme will simplify the process of taking the static HTML/CSS/JavaScript that you have created, and then integrating it into WordPress so that all of the content and pages are controlled via the WordPress CMS.
 
 ---------------------
 Local Dev Environment
@@ -28,11 +34,7 @@ If you do not already have a local development environment setup, you will need 
 * Mac / Linux Dev Environment Setup (tbd)
 * :ref:`windows-env-guide`
 
----------------------
-Pre-Requisites
----------------------
-
-Before you can really benefit from this starter theme, you should have an already completed front end (HTML/CSS/JavaScript) of the site you are building.  This starter theme will simplify the process of taking the static HTML/CSS/JavaScript that you have created, and then integrating it into WordPress so that all of the content and pages are controlled via the WordPress CMS.
+.. _installation:
 
 -------------------------------------------
 Installation
