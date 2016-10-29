@@ -22,9 +22,11 @@ Pre-Requisites
 
 Before you can really benefit from this starter theme, you should have an already completed front end (HTML/CSS/JavaScript) of the site you are building.  This starter theme will simplify the process of taking the static HTML/CSS/JavaScript that you have created, and then integrating it into WordPress so that all of the content and pages are controlled via the WordPress CMS.
 
----------------------
-Local Dev Environment
----------------------
+.. _installation:
+
+-------------------------------------------
+Installation
+-------------------------------------------
 
 If you do not already have a local development environment setup, you will need to do that.  Depending on whether you use Mac, Linux, or Windows for you local environment, we have a few guides.
 
@@ -33,12 +35,6 @@ If you do not already have a local development environment setup, you will need 
 
 * Mac / Linux Dev Environment Setup (tbd)
 * :ref:`windows-env-guide`
-
-.. _installation:
-
--------------------------------------------
-Installation
--------------------------------------------
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Step 1: Clone the repository from Github
