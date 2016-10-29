@@ -62,7 +62,6 @@ We always recommend Gravity Forms as the best plugin to use for form submission 
 Advanced Custom Fields Pro
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 We bundle ACF5 directly into the theme itself because it relies on the ACF5 Options Panel functionality and we also use Advanced Custom Fields heavily during WP development.  For the time being, the theme does not work well without ACF5, but on a future release, we may have a version of the theme that does not use ACF5.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,6 +98,5 @@ Asset Pipeline
 --------------------
 
 For all of your static assets (CSS files, images, custom @font-face fonts, JavaScript code, etc.), we like to use Gulp to manage.  All of these files will exist within the assets directory of the theme, and you can read more about Gulp here: Guide to Gulp.
-
 
 The Vanilla theme is all driven by the gulpfile.js which is included in the theme.  The output of the gulpfile is a theme.js file and a theme.css file - these are the two files that also outputted automatically into the <head> and footer of each page using the Vanilla boilerplate.

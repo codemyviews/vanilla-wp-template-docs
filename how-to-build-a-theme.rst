@@ -6,7 +6,8 @@ This guide will walk you through the steps of converting your static HTML/CSS fi
 
 This guide assumes you have already followed the setup guide from the documentation link above.
 
-.. todo:: update links
+.. todo::
+   add sample views to the theme
 
 ------------------------------------------
 Step 1: Views, Partials and Layouts
@@ -22,12 +23,12 @@ Here is what a sample view looks like:
 
 https://github.com/codemyviews/vanilla-wp-boilerplate/blob/master/public/wp-content/themes/base-theme/views/page-sample-custom-page-template.blade.php
 
-
 **Layouts**
 
-Once you have turned each of the HTML files into a view, you should next look at which HTML pages use the same layout.  If all of your views have the same exact header and
+Once you have turned each of the HTML files into a view, you should next look at which HTML pages use the same layout. If all of your views have the same exact header and
 footer, you likely can extract all of this into one layout.
-Please see the same master.blade.php layout here: https://github.com/codemyviews/vanilla-wp-boilerplate/blob/master/public/wp-content/themes/base-theme/layouts/master.blade.php
+
+Please see the same *master.blade.php* layout here: https://github.com/codemyviews/vanilla-wp-boilerplate/blob/master/public/wp-content/themes/base-theme/layouts/master.blade.php
 
 **Partials**
 

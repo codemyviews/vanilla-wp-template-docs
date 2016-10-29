@@ -8,15 +8,11 @@ Welcome to Vanilla Wordpress Template's documentation!
 
 Contents:
 
-.. _intro:
+.. _overview:
 .. toctree::
+   :maxdepth: 5
 
-   intro
-
-.. _installation:
-.. toctree::
-
-   installation
+   overview
 
 .. _basics:
 .. toctree::
@@ -39,3 +35,10 @@ Contents:
 .. toctree::
 
    how-to-build-a-theme
+
+.. _appendix-a-windows-env:
+.. toctree::
+   :maxdepth: 2
+
+   appendix-a-windows-env
+

@@ -1,6 +1,20 @@
 ==============
-Installation
+Overview
 ==============
+
+This documentation was created to accompany the Vanilla WP Boilerplate template.  This template can be found on Github: `Vanilla WordPress Boilerplate by Code My Views <https://github.com/codemyviews/vanilla-wp-boilerplate>`_.
+
+The purpose of the Vanilla boilerplate is to simplify the process of taking static HTML/CSS and templating it out into a custom WordPress theme.
+
+---------------------
+Motivation
+---------------------
+
+The end goal in building a custom WordPress theme is to make it as easy as possible for the end user to update the content of their site.
+
+The input into this process is static HTML/CSS.  The expected output is a very easy to use WP theme using the various components you have available to you below.
+
+When you are building out a WP theme, it is important to think of the end user experience.  How can you setup the theme so it is as easy and foolproof as possible for the end user.
 
 ---------------------
 Local Dev Environment
@@ -9,10 +23,10 @@ Local Dev Environment
 If you do not already have a local development environment setup, you will need to do that.  Depending on whether you use Mac, Linux, or Windows for you local environment, we have a few guides.
 
 .. todo::
-add installation guides for mac-linux/windows
+   add installation guides for unix systems
 
-Mac / Linux Dev Environment Setup
-Windows Dev Environment Setup
+* Mac / Linux Dev Environment Setup (tbd)
+* :ref:`windows-env-guide`
 
 ---------------------
 Pre-Requisites
@@ -21,11 +35,11 @@ Pre-Requisites
 Before you can really benefit from this starter theme, you should have an already completed front end (HTML/CSS/JavaScript) of the site you are building.  This starter theme will simplify the process of taking the static HTML/CSS/JavaScript that you have created, and then integrating it into WordPress so that all of the content and pages are controlled via the WordPress CMS.
 
 -------------------------------------------
-Theme Install Instructions - 5 Easy Steps
+Installation
 -------------------------------------------
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-STEP 1 - Clone the repository from Github
+Step 1: Clone the repository from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -35,15 +49,12 @@ STEP 1 - Clone the repository from Github
 During this step, we also recommend renaming the theme folder to the name of your theme.  By default, the theme folder is called *base-theme*, but you can name this whatever you want.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-STEP 2 - Composer Install
+Step 2: Composer Install
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you do not already have Composer installed on your computer, you will need to download and install it here: https://getcomposer.org .
 
-.. todo::
-add link for git bash
-
-Once you have Composer installed on your machine, you will need to open your Terminal (or Git Bash if you are on Windows) and then move to the root of the project directory and install the composer dependencies.
+Once you have Composer installed on your machine, you will need to open your Terminal (or `Git Bash <https://git-scm.com/downloads>`_ if you are on Windows) and then move to the root of the project directory and install the composer dependencies.
 
 ::
 
@@ -51,7 +62,7 @@ Once you have Composer installed on your machine, you will need to open your Ter
    composer install
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-STEP 3 - Create .env file in project root
+Step 3: Create .env file in project root
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Within the project root that you cloned from Github, you will see a file called *.env.example*.  Create a copy of this file and call it: *.env*
@@ -84,13 +95,13 @@ Here is a sample .env file:
    TABLE_PREFIX=wp_
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-STEP 4 - Create local MySQL database
+Step 4: Create local MySQL database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to create a new MySQL database in your local dev environment. The name of the database should match the value of DB_NAME from the *.env* file you created in the previous step.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-STEP 5 - Serve site in local dev environment and view site
+Step 5: Serve site in local dev environment and view site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As a final step, you will need to ensure that you setup the site to be served within your local dev environment.  Please follow the instructions in your local dev environment setup guide if you have questions about this.  The important detail to note here is that the public path for the Vanilla boilerplate theme is this:

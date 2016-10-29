@@ -6,14 +6,6 @@ Theme Components
 
 In this section, you will learn about the key components that make up the Vanilla WordPress theme.  It is critical that you understand each of these terms as it will help you correctly model your static front end site into a completely dynamic WordPress theme.
 
-**Goal**
-
-The end goal in building a custom WordPress theme is to make it as easy as possible for the end user to update the content of their site.
-
-The input into this process is static HTML/CSS.  The expected output is a very easy to use WP theme using the various components you have available to you below.
-
-When you are building out a WP theme, it is important to think of the end user experience.  How can you setup the theme so it is as easy and foolproof as possible for the end user.
-
 --------------------------
 Templates
 --------------------------
